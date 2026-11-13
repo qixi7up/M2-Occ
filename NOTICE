@@ -1,0 +1,25 @@
+M2Occ
+Copyright 2026 The M²-Occ Authors
+
+This project is a derivative work based on SurroundOcc, which is licensed
+under the Apache License, Version 2.0 (the "License"). You may obtain a copy
+of the License at:
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+SurroundOcc
+Copyright 2023 Yi Wei, Linqing Zhao, Wenzhao Zheng, Zheng Zhu, Jiwen Lu, Jie Zhou
+Licensed under the Apache License, Version 2.0
+Project: https://github.com/weiyithu/SurroundOcc
+Paper: SurroundOcc: Multi-Camera 3D Occupancy Prediction for Autonomous Driving (ICCV 2023)
+
+M2Occ reuses and modifies parts of the SurroundOcc codebase. All original
+copyright, patent, trademark, and attribution notices from SurroundOcc are
+retained in the corresponding source files.
+
+This software also builds upon and acknowledges the following projects:
+- BEVFormer        (https://github.com/fundamentalvision/BEVFormer)
+- MonoScene        (https://github.com/astra-vision/MonoScene)
+- MMDetection3D    (https://github.com/open-mmlab/mmdetection3d)
+
+The above works are distributed under their respective open-source licenses.

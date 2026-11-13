@@ -1,0 +1,48 @@
+# ================= Python =================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ================= Jupyter / Editor =================
+.ipynb_checkpoints/
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# ================= SurroundOcc / M2Occ runtime =================
+# 数据集与生成标签（体积大，按需自行准备）
+data/
+# 训练/评测产出
+work_dirs/
+ckpts/
+visual_dir/
+# 模型权重（通过 Release / 云盘分发，不进仓库）
+*.pth
+*.ckpt
+# 中间结果
+*.npy
+*.ply
+*.pkl
+
+# ================= Logs =================
+*.log
+tensorboard/

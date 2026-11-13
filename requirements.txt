@@ -1,0 +1,52 @@
+# M²-Occ dependencies
+# Python 3.7, CUDA 11.1
+#
+# PyTorch and MMCV must be installed FIRST with the version-locked wheels
+# below (they require the --find-links URLs). After that, install everything
+# else with:
+#     pip install -r requirements.txt
+#
+# The CUDA extension `extensions/chamfer_dist` is NOT a pip package — it must
+# be compiled in place (see docs/install.md):
+#     cd extensions/chamfer_dist && python setup.py install && cd ../..
+#
+# NOTE: torchaudio is NOT required — it was listed in an older install snippet
+# but is never imported by the codebase.
+
+# --- 1. PyTorch 1.10.1 + cu111 (run before the rest) ---
+# pip install torch==1.10.1+cu111 torchvision==0.11.2+cu111 \
+#     -f https://download.pytorch.org/whl/torch_stable.html
+
+# --- 2. mmcv-full 1.4.0 (built for cu111 / torch1.10) ---
+# pip install mmcv-full==1.4.0 \
+#     -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.10.0/index.html
+
+# --- 3. OpenMMLab + model / vision libraries ---
+mmdet==2.14.0
+mmsegmentation==0.14.1
+mmdet3d==0.17.1            # version matched to SurroundOcc; verify in docs/install.md
+timm
+Pillow
+matplotlib
+pycocotools
+PyYAML
+
+# --- 4. Occupancy / dataset tooling (nuScenes) ---
+numpy
+opencv-python
+scikit-learn
+scikit-image
+scipy
+open3d
+nuscenes-devkit
+pyquaternion
+shapely
+tqdm
+lyft-dataset-sdk          # only needed by data-conversion scripts
+
+# --- 5. Optional (extra visualisers / other dataset converters) ---
+# tensorflow
+# waymo-open-dataset-tf-2-11-0
+# mayavi
+# seaborn
+# ipython
